@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "clean": "^4.0.2",
     "d3": "^7.5.0",
     "netlify-cli": "^10.6.2",
     "react": "^18.2.0",
@@ -19,6 +20,8 @@
     "read-excel-file": "^5.3.5",
     "remark-math": "^5.1.1",
     "reveal.js": "^4.3.1",
+    "victory": "^36.5.3",
+    "victory-voronoi": "^36.5.3",
     "web-vitals": "^2.1.0",
     "xlsx": "^0.18.5"
   },

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 // import './App.css';
 import './styles/style.css'
 import Reveal from 'reveal.js';
@@ -17,13 +17,12 @@ import Section5 from './Components/Section5';
 import Section6 from './Components/Section6';
 import Section7 from './Components/Section7';
 import Section8 from './Components/Section8';
-import testCSV from './assets/data/testdataCsv.csv'
-import { testExcel } from './assets/data'
-
+import Section from './Components/Section';
+import VisualizationDataTest from './Components/VisualizationData/VisualizationData';
 import ExcelImport from './Components/ReadExcel/ExcelImport';
 function App() {
-
-
+  const [data, setData] = useState({})
+  // console.log("data app", data);
 
 
   useEffect(() => {
@@ -44,10 +43,10 @@ function App() {
 
 
     <div className="slides">
-      My Prezz App Test
+      <div className='title'>My Prezz App Test</div>
 
-      <ExcelImport />
 
+      <Section setData={setData} data={data} />
       <Section0 />
       <Section1 />
       <section>

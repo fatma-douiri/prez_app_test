@@ -1,0 +1,13 @@
+.sectionTest {
+    /* top: -40% !important; */
+    
+}
+.myVictoryChartTest{
+    position: absolute;
+    top: -97%;
+    left: 22%;
+    width: 60%;
+}
+.reveal .slides section{
+    pointer-events: all !important;
+}
