@@ -27,9 +27,9 @@ function App() {
 
   useEffect(() => {
     let deck = new Reveal({
-      // backgroundTransition: 'slide',
-      // transition: 'slide',
-      // autoPlayMedia: true
+      backgroundTransition: 'slide',
+      transition: 'slide',
+      autoPlayMedia: true,
       plugins: [RevealMath.KaTeX],
       slideNumber: true,
 
@@ -53,12 +53,12 @@ function App() {
 
         <section data-transition="slide" className='sectionTest'>
 
-          <h1>Yallaaa</h1>
+          <h1>Let's go!</h1>
         </section>
       </GetData>
       {/* <SectionVictory data={data} setData={setData} /> */}
       <SectionVictory data={data} />
-      <SectionD3 />
+      <SectionD3 data={data} />
 
       <Section0 />
       <Section1 />

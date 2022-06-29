@@ -7,13 +7,13 @@ import {
     VictoryTheme
 } from 'victory';
 import LightSpeed from 'react-reveal/LightSpeed';
-const SectionVictory = ({ props, setData, data }) => {
-
+const SectionVictory = ({ data }) => {
+    const dataGraph_1 = data && data.Sheet1 ? data.Sheet1 : []
+    const dataGraph_2 = data && data.Sheet2 ? data.Sheet2 : []
     const [show1, setShow1] = useState(false)
     const [show2, setShow2] = useState(false)
-    const [message, setMessage] = useState("show me graph 1")
-    const dataSection_0 = data ? data.Sheet1 : []
-    const dataSection_1 = data ? data.Sheet2 : []
+    const [message, setMessage] = useState("Click to show me graph 1")
+
     // console.log("data", data);
     // console.log("dataSection_0", dataSection_0);
     // console.log("dataSection_1", dataSection_1);
@@ -22,7 +22,7 @@ const SectionVictory = ({ props, setData, data }) => {
         if (!show1) {
 
             setShow1(!show1);
-            setMessage("show me graph 2")
+            setMessage("Click to show me graph 2")
         } else if (!show2) {
 
             setShow2(!show2);
@@ -32,7 +32,8 @@ const SectionVictory = ({ props, setData, data }) => {
 
     useEffect(() => {
         setTimeout(() => {
-
+            //if you want movie animation a bit later
+            //
         }, 2000);
     }, [])
 
@@ -43,7 +44,7 @@ const SectionVictory = ({ props, setData, data }) => {
         <section data-transition="slide" className='sectionTest'>
             <LightSpeed left opposite when={!show1 || !show1 && show2}>
                 <div onClick={handleClick} style={{ cursor: 'pointer' }}>
-                    <h1  >{message}</h1></div>
+                    <h5  >{message}</h5></div>
             </LightSpeed>
             {show1 && !show2 &&
                 <div className='myVictoryChartTest 1' onClick={handleClick} style={{ cursor: 'pointer' }}>
@@ -56,7 +57,7 @@ const SectionVictory = ({ props, setData, data }) => {
                         theme={VictoryTheme.material}
                         domainPadding={20}>
                         <VictoryBar
-                            data={dataSection_0}
+                            data={dataGraph_1}
                             // // data accessor for x values
                             x="category"
                             // // data accessor for y values
@@ -72,7 +73,7 @@ const SectionVictory = ({ props, setData, data }) => {
                         theme={VictoryTheme.material}
                         domainPadding={20}>
                         <VictoryBar
-                            data={dataSection_1}
+                            data={dataGraph_2}
                             // // data accessor for x values
                             x="category2"
                             // // data accessor for y values
