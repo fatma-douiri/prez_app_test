@@ -45,7 +45,7 @@ const ExcelImport = ({ props }) => {
 
   }
   const doSomething = () => {
-    console.log("doSomething called by child with ");
+    console.log("doSomething called by ExcelImport component !");
     // if (sheetData) { props.setData(sheetData) }
 
   }

@@ -17,9 +17,9 @@ import Section5 from './Components/Section5';
 import Section6 from './Components/Section6';
 import Section7 from './Components/Section7';
 import Section8 from './Components/Section8';
-import Section from './Components/Section';
-import VisualizationDataTest from './Components/VisualizationData/VisualizationData';
-import ExcelImport from './Components/ReadExcel/ExcelImport';
+import SectionVictory from './Components/SectionVictory';
+import SectionD3 from './Components/SectionD3'
+import GetData from './Components/GetData/GetData';
 function App() {
   const [data, setData] = useState({})
   // console.log("data app", data);
@@ -46,7 +46,20 @@ function App() {
       <div className='title'>My Prezz App Test</div>
 
 
-      <Section setData={setData} data={data} />
+
+
+
+      <GetData data={data} setData={setData}>
+
+        <section data-transition="slide" className='sectionTest'>
+
+          <h1>Yallaaa</h1>
+        </section>
+      </GetData>
+      {/* <SectionVictory data={data} setData={setData} /> */}
+      <SectionVictory data={data} />
+      <SectionD3 />
+
       <Section0 />
       <Section1 />
       <section>

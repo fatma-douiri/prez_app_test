@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import ExcelImport from '../ReadExcel/ExcelImport'
 
-const VisualizationData = (props) => {
+const GetData = (props) => {
     return (
         <ExcelImport props={props} >
 
@@ -11,4 +11,4 @@ const VisualizationData = (props) => {
     )
 }
 
-export default VisualizationData
+export default GetData
