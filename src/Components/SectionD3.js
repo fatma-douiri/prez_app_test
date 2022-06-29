@@ -62,16 +62,14 @@ const SectionD3 = ({ data }) => {
             console.log("Chartdata", chartdata);
             setChartdata(dataGraph)
         } else {
-            // chartdata.map(
-            //             function (d) {
-            //                 setChartdata({...chartdata,
-            //                 })
-            //                 d.value = Math.floor(
-            //                     Math.random() * (maxValue + 1)
-            //                 )
+            setChartdata(chartdata.map(function (d) {
 
+                d.value = Math.floor(
+                    Math.random() * (maxValue + 1)
+                )
 
-            //             })
+                return d
+            }))
         }
 
 
