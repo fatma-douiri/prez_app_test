@@ -61,7 +61,7 @@ function App() {
       <SectionD3 data={data} />
 
       <Section0 />
-      <Section1 />
+      {/* <Section1 /> */}
       <section>
         <Section2 />
         <Section3 />
