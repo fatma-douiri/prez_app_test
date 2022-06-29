@@ -10,16 +10,17 @@ const Section2 = () => {
     return (
         <section data-transition="slide">
             <div className="fullpage two">
-                <Flip left cascade when={show}>
-                    <ul>
+                <Flip left cascade >
+                    {/* <Flip left cascade when={show}> */}
+                    <div>
                         <li>Flip 1</li>
                         <li>Flip 2</li>
                         <li>Flip 3</li>
-                    </ul>
+                    </div>
                 </Flip>
-                <button onClick={clickHandler}>
+                {/* <button onClick={clickHandler}>
                     {show ? "Hide" : "Show"}
-                </button>
+                </button> */}
             </div></section>
 
 
