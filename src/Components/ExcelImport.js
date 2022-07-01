@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { readDataFromExcel } from '../../utils/readFile'
-
+import { readDataFromExcel } from '../utils/readFile'
+import { Link, Redirect, Router } from 'react-router-dom'
 
 
 const ExcelImport = ({ props }) => {
@@ -54,9 +54,11 @@ const ExcelImport = ({ props }) => {
     action();
     return props.children
   }
+
   return (
-    Object.entries(sheetData).length === 0 || !checkFile ?
-      <section data-transition="slide" >
+    // Object.entries(sheetData).length === 0 || !checkFile ?
+    <>
+      <div>
         {console.log("checkFile", checkFile)}
         <h3> Excel Import</h3>
         <span style={{ color: 'white' }}>{fileName && <span>{fileName}<br /></span>}</span>
@@ -68,11 +70,21 @@ const ExcelImport = ({ props }) => {
         />{fileName && <i className="icon-remove-sign"
           onClick={() => handleRemove()}
         ></i>}
-      </section> :
-      < >
 
-        {checkFile && children(doSomething)}
-      </>
+      </div>
+      <div>
+        {checkFile &&
+
+          <Link from="/Dashboard" to="/MyPrezz" target="_blank">Let's Go To the Prezz !</Link>
+
+        }
+      </div>
+    </>
+    // :
+    // < >
+
+    //   {checkFile && children(doSomething)}
+    // </>
 
 
 

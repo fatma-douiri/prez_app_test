@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ExcelImport from '../ReadExcel/ExcelImport'
+import ExcelImport from '../../Components/ExcelImport'
 
 const GetData = (props) => {
     return (

@@ -10,9 +10,9 @@ const Section4 = () => {
         <section data-transition="slide">
             <div className="fullpage one">
                 <Fade left when={show}>
-                    <ul>
-                        <li>Fade</li>
-                    </ul>
+
+                    <li>Fade</li>
+
                 </Fade>
                 <button onClick={clickHandler}>
                     {show ? "Hide" : "Show"}

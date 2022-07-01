@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ReactDOM } from 'react-dom';
-import "../assets/styles/styleSection.css"
+import "../styles/styleSection.css"
 // import VisualizationData from './GetData/GetData'
 import {
     VictoryBar, VictoryChart, VictoryAxis,

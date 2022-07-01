@@ -1,0 +1,11 @@
+.dashboard{
+    background-color: burlywood;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+}
