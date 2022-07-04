@@ -14,6 +14,7 @@ import Section7 from './Section7';
 import Section8 from './Section8';
 import SectionVictory from './SectionVictory';
 import SectionD3 from './SectionD3'
+import Section from './Summary/SectionSummary'
 const MyPrez = () => {
     var data = JSON.parse(localStorage.getItem("data"))
     console.log("data in my prez", data);
@@ -35,10 +36,10 @@ const MyPrez = () => {
             <div className='title'>My Prezz App Test</div>
 
 
+            <Section data={data.Summary} />
 
-            {/* <SectionVictory data={data} setData={setData} /> */}
-            <SectionVictory data={data} />
-            <SectionD3 data={data} />
+            {/* <SectionVictory data={data} />
+            <SectionD3 data={data} /> */}
 
             <Section0 />
             {/* <Section1 /> */}
