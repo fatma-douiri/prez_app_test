@@ -1,0 +1,14 @@
+.keys{   
+        width: '60%' !important;
+        height: '30vh'!important;
+        position: 'absolute'!important;
+        right: '-20%'!important;
+        margin-top:    '10%'!important;
+         display: 'flex'!important;
+        flex-direction: 'column'!important;
+         justify-content: 'space-around'!important
+
+
+
+
+}

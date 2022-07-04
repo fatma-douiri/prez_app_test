@@ -75,7 +75,7 @@ const ExcelImport = ({ props }) => {
       <div>
         {checkFile &&
 
-          <Link from="/Dashboard" to="/MyPrezz" target="_blank">Let's Go To the Prezz !</Link>
+          <Link from="/Dashboard" to="/MyPrez" target="_blank">Let's Go To the Prez !</Link>
 
         }
       </div>

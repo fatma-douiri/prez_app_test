@@ -14,7 +14,7 @@ import Section7 from './Section7';
 import Section8 from './Section8';
 import SectionVictory from './SectionVictory';
 import SectionD3 from './SectionD3'
-import Section from './Summary/SectionSummary'
+import SectionSummary from './Summary/SectionSummary'
 const MyPrez = () => {
     var data = JSON.parse(localStorage.getItem("data"))
     console.log("data in my prez", data);
@@ -33,10 +33,10 @@ const MyPrez = () => {
     }, [])
     return (
         <div className="slides">
-            <div className='title'>My Prezz App Test</div>
+            <div className='title'>Bayer Prez App Test</div>
 
 
-            <Section data={data.Summary} />
+            <SectionSummary data={data.Summary} />
 
             {/* <SectionVictory data={data} />
             <SectionD3 data={data} /> */}

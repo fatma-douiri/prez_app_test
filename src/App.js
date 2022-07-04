@@ -25,7 +25,7 @@ function App() {
       <Switch>
         <Route exact path='/' render={() => <Redirect to="/Dashboard" />} />
         <Route path="/Dashboard" render={() => <Dashboard data={data} setData={setData} />} />
-        <Route path="/MyPrezz" render={() => <MyPrez />} />
+        <Route path="/MyPrez" render={() => <MyPrez />} />
 
 
 
