@@ -6,7 +6,10 @@ const Section6 = () => {
         <section data-transition="slide" >
 
 
-            <video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+            <video data-autoplay >
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type='video/mp4' />
+
+            </video>
             <Zoom>
                 <img data-src={imgTest} alt="img" style={{ marginLeft: '9%' }} />
             </Zoom>
