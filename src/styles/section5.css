@@ -1,0 +1,15 @@
+.container{
+    width: 50vw;
+    height: 61vh;
+position: relative;
+margin-top: 18%;
+margin-left: 17%;
+
+}
+.ligne{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}

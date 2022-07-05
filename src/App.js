@@ -15,8 +15,6 @@ function App() {
 
     if (data != undefined) {
       localStorage.setItem("data", JSON.stringify(data));
-
-
     }
   }, [data])
   return (

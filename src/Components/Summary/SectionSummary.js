@@ -4,7 +4,7 @@ import Graph2 from './Graph2'
 
 const SectionSummary = ({ data }) => {
 
-    console.log("dataa in section summary", data);
+    // console.log("dataa in section summary", data);
 
     return (
         <section data-transition="slide" style={{ top: '7%', left: '20%' }}>

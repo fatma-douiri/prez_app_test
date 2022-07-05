@@ -1,12 +1,12 @@
 .keys{   
-        width: '60%' !important;
-        height: '30vh'!important;
-        position: 'absolute'!important;
-        right: '-20%'!important;
-        margin-top:    '10%'!important;
-         display: 'flex'!important;
-        flex-direction: 'column'!important;
-         justify-content: 'space-around'!important
+        width: '60%';
+        height: '30vh';
+        position: 'absolute';
+        right: '-20%';
+        margin-top:    '10%';
+         display: 'flex';
+        flex-direction: 'column';
+         justify-content: 'space-around'
 
 
 
